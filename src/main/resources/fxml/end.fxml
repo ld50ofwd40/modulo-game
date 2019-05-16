@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EndController">
+    <children>
+        <Label layoutY="30" prefWidth="300" alignment="CENTER" text="WINNER!"/>
+        <Button onAction="#newGame" alignment="CENTER" text="New Game" layoutY="90" layoutX="100" prefWidth="100"/>
+    </children>
+</Pane>

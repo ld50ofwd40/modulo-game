@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<Pane fx:id="thePane"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.GameController"
+      onKeyPressed="#handleOnKeyPressed" focusTraversable="true"
+      prefHeight="350.0" prefWidth="300.0">
+    <children>
+        <GridPane style="-fx-background-color: #0b5345;" fx:id="gameGrid" prefHeight="278.0" prefWidth="278.0" alignment="center" hgap="4" vgap="4"> <!-- layoutX="96.0" layoutY="95.0" prefHeight="300.0" prefWidth="300.0"-->
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="50.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" minHeight="10.0" prefHeight="50.0"  />
+                <RowConstraints valignment="CENTER" minHeight="10.0" prefHeight="50.0"  />
+                <RowConstraints valignment="CENTER" minHeight="10.0" prefHeight="50.0"  />
+                <RowConstraints valignment="CENTER" minHeight="10.0" prefHeight="50.0"  />
+                <RowConstraints valignment="CENTER" minHeight="10.0" prefHeight="50.0"  />
+            </rowConstraints>
+            <children>
+                <Rectangle fx:id="r00"/>
+                <Rectangle fx:id="r01"/>
+                <Rectangle fx:id="r02"/>
+                <Rectangle fx:id="r03"/>
+                <Rectangle fx:id="r04"/>
+                <Rectangle fx:id="r10"/>
+                <Rectangle fx:id="r11"/>
+                <Rectangle fx:id="r12"/>
+                <Rectangle fx:id="r13"/>
+                <Rectangle fx:id="r14"/>
+                <Rectangle fx:id="r20"/>
+                <Rectangle fx:id="r21"/>
+                <Rectangle fx:id="r22"/>
+                <Rectangle fx:id="r23"/>
+                <Rectangle fx:id="r24"/>
+                <Rectangle fx:id="r30"/>
+                <Rectangle fx:id="r31"/>
+                <Rectangle fx:id="r32"/>
+                <Rectangle fx:id="r33"/>
+                <Rectangle fx:id="r34"/>
+                <Rectangle fx:id="r40"/>
+                <Rectangle fx:id="r41"/>
+                <Rectangle fx:id="r42"/>
+                <Rectangle fx:id="r43"/>
+                <Rectangle fx:id="r44"/>
+                <Label fx:id="t00" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t01" GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t02" GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t03" GridPane.columnIndex="3" GridPane.rowIndex="0" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t04" GridPane.columnIndex="4" GridPane.rowIndex="0" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t10" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t11" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t12" GridPane.columnIndex="2" GridPane.rowIndex="1" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t13" GridPane.columnIndex="3" GridPane.rowIndex="1" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t14" GridPane.columnIndex="4" GridPane.rowIndex="1" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t20" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t21" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t22" GridPane.columnIndex="2" GridPane.rowIndex="2" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t23" GridPane.columnIndex="3" GridPane.rowIndex="2" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t24" GridPane.columnIndex="4" GridPane.rowIndex="2" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t30" GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t31" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t32" GridPane.columnIndex="2" GridPane.rowIndex="3" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t33" GridPane.columnIndex="3" GridPane.rowIndex="3" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t34" GridPane.columnIndex="4" GridPane.rowIndex="3" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t40" GridPane.columnIndex="0" GridPane.rowIndex="4" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t41" GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t42" GridPane.columnIndex="2" GridPane.rowIndex="4" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t43" GridPane.columnIndex="3" GridPane.rowIndex="4" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+                <Label fx:id="t44" GridPane.columnIndex="4" GridPane.rowIndex="4" style="-fx-font-size: 30; -fx-font-family: Georgia;"/>
+
+                <fx:define>
+                    <ArrayList fx:id="textList" >
+                        <fx:reference source="t00"/>
+                        <fx:reference source="t01"/>
+                        <fx:reference source="t02"/>
+                        <fx:reference source="t03"/>
+                        <fx:reference source="t04"/>
+                        <fx:reference source="t10"/>
+                        <fx:reference source="t11"/>
+                        <fx:reference source="t12"/>
+                        <fx:reference source="t13"/>
+                        <fx:reference source="t14"/>
+                        <fx:reference source="t20"/>
+                        <fx:reference source="t21"/>
+                        <fx:reference source="t22"/>
+                        <fx:reference source="t23"/>
+                        <fx:reference source="t24"/>
+                        <fx:reference source="t30"/>
+                        <fx:reference source="t31"/>
+                        <fx:reference source="t32"/>
+                        <fx:reference source="t33"/>
+                        <fx:reference source="t34"/>
+                        <fx:reference source="t40"/>
+                        <fx:reference source="t41"/>
+                        <fx:reference source="t42"/>
+                        <fx:reference source="t43"/>
+                        <fx:reference source="t44"/>
+                    </ArrayList>
+                </fx:define>
+                <fx:define>
+                    <ArrayList fx:id="rectList" >
+                        <fx:reference source="r00"/>
+                        <fx:reference source="r01"/>
+                        <fx:reference source="r02"/>
+                        <fx:reference source="r03"/>
+                        <fx:reference source="r04"/>
+                        <fx:reference source="r10"/>
+                        <fx:reference source="r11"/>
+                        <fx:reference source="r12"/>
+                        <fx:reference source="r13"/>
+                        <fx:reference source="r14"/>
+                        <fx:reference source="r20"/>
+                        <fx:reference source="r21"/>
+                        <fx:reference source="r22"/>
+                        <fx:reference source="r23"/>
+                        <fx:reference source="r24"/>
+                        <fx:reference source="r30"/>
+                        <fx:reference source="r31"/>
+                        <fx:reference source="r32"/>
+                        <fx:reference source="r33"/>
+                        <fx:reference source="r34"/>
+                        <fx:reference source="r40"/>
+                        <fx:reference source="r41"/>
+                        <fx:reference source="r42"/>
+                        <fx:reference source="r43"/>
+                        <fx:reference source="r44"/>
+                    </ArrayList>
+                </fx:define>
+            </children>
+        </GridPane>
+        <Label layoutX="20" layoutY="330" fx:id="numberOfSteps" text="steps: 0"/>
+    </children>
+</Pane>

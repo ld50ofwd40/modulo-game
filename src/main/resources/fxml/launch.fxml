@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.LaunchController"
+            prefHeight="200.0" prefWidth="360.0">
+    <children>
+        <Pane layoutX="40.0" layoutY="40.0">
+            <VBox>
+                <Label text="The name of the Game" textFill="#550000">
+                    <font>
+                        <Font name="Georgia" size="24.0" />
+                    </font>
+                </Label>
+                <HBox spacing="10" alignment="BASELINE_LEFT">
+                    <Label prefWidth="70" text="Username:" />
+                    <TextField fx:id="userName" />
+                </HBox>
+                <HBox spacing="10" alignment="BASELINE_LEFT">
+                    <Label prefWidth="70" text="Modulo:" />
+                    <TextField fx:id="moduloTextField" />
+                </HBox>
+                <Label fx:id="errorLabel" text=""/>
+            </VBox>
+        </Pane>
+        <Button fx:id="startButton" layoutX="130.0" layoutY="140.0" mnemonicParsing="false" alignment="CENTER" onAction="#startAction" prefWidth="100.0" text="Start game" />
+    </children>
+</Pane>
